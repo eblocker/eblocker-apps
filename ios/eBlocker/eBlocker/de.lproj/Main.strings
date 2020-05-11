@@ -1,0 +1,38 @@
+/* Class = "UILabel"; text = "Searching eBlocker..."; ObjectID = "5Nn-iw-yZf"; */
+"5Nn-iw-yZf.text" = "Suche eBlocker...";
+
+/* Class = "UIButton"; normalTitle = "Dashboard"; ObjectID = "66X-9W-IGv"; */
+"66X-9W-IGv.normalTitle" = "Dashboard";
+
+/* Class = "UITableViewController"; title = "Master"; ObjectID = "7bK-jq-Zjz"; */
+"7bK-jq-Zjz.title" = "Master";
+
+/* Class = "UILabel"; text = "192.168.42.23"; ObjectID = "IEm-eV-PKV"; */
+"IEm-eV-PKV.text" = "192.168.42.23";
+
+/* Class = "UINavigationController"; title = "Master"; ObjectID = "RMx-3f-FxP"; */
+"RMx-3f-FxP.title" = "Master";
+
+/* Class = "UINavigationItem"; title = "eBlocker"; ObjectID = "Zdf-7t-Un8"; */
+"Zdf-7t-Un8.title" = "eBlocker";
+
+/* Class = "UILabel"; text = "eBlocker Name"; ObjectID = "fVf-gs-PuT"; */
+"fVf-gs-PuT.text" = "eBlocker Name";
+
+/* Class = "UIBarButtonItem"; title = "Help"; ObjectID = "gDF-nC-AQJ"; */
+"gDF-nC-AQJ.title" = "Hilfe";
+
+/* Class = "UILabel"; text = "Starting the eBlocker for the first time can take up to 5 minutes.\n\nPlease make sure that you are on your router's WiFi and eBlocker is connected to the same router."; ObjectID = "hrZ-YK-eVZ"; */
+"hrZ-YK-eVZ.text" = "Der erste Start des eBlockers kann bis zu 5 Minuten dauern.\n\nBitte stellen Sie sicher, dass Sie mit dem WLAN des Routers verbunden sind, an den der eBlocker angeschlossen wurde.";
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "kuX-Qz-hIp"; */
+"kuX-Qz-hIp.normalTitle" = "Einstellungen";
+
+/* Class = "UIButton"; normalTitle = "Enter eBlocker's IP address"; ObjectID = "fZL-7D-FxA"; */
+"fZL-7D-FxA.normalTitle" = "IP-Adresse des eBlockers eingeben";
+
+/* Class = "UILabel"; text = "IP Address"; ObjectID = "Jc6-18-PE1"; */
+"Jc6-18-PE1.text" = "IP-Adresse";
+
+/* Class = "UIButton"; normalTitle = "Activate License"; ObjectID = "dZZ-RM-Uqf"; */
+"dZZ-RM-Uqf.normalTitle" = "Lizenz aktivieren";

@@ -1,0 +1,19 @@
+
+"eBlocker's IP address" = "IP-Adresse des eBlockers";
+"You can find eBlocker's IP address in the settings of your router. Look for the list of devices or the list of DHCP clients." =
+"Sie finden die IP-Adresse des eBlockers in den Einstellungen Ihres Routers. Suchen Sie nach der Liste der Geräte im Heimnetz oder der Liste der DHCP-Clients.";
+
+"eOS (unknown version)" = "eOS (unbekannte Version)";
+
+"(not registered)" = "(nicht registriert)";
+"Connecting" = "Verbinden";
+"Booting" = "Startet";
+"Offline" = "Nicht verbunden";
+"Error" = "Fehler";
+"Installing update" = "Wird aktualisiert";
+"Shutting down" = "Fährt herunter";
+"Rebooting" = "Startet neu";
+
+"eBlocker not found" = "eBlocker nicht gefunden";
+"No eBlocker could be found at address %@" = "Unter der Adresse %@ wurde kein eBlocker gefunden";
+"https://eblocker.org/app-help-en" = "https://eblocker.org/app-help-de";

@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A44D5242221ACDD700ED06E0 /* EblockerApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D5241221ACDD700ED06E0 /* EblockerApiClient.swift */; };
+		A44D5243221ACDD700ED06E0 /* EblockerApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D5241221ACDD700ED06E0 /* EblockerApiClient.swift */; };
+		A44D5244221ACDD700ED06E0 /* EblockerApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D5241221ACDD700ED06E0 /* EblockerApiClient.swift */; };
+		A46B80D92264CC0A002E64A7 /* EblockerApiClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B80D82264CC0A002E64A7 /* EblockerApiClientDelegate.swift */; };
+		A46B80DA2264CDAA002E64A7 /* EblockerApiClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B80D82264CC0A002E64A7 /* EblockerApiClientDelegate.swift */; };
+		A46B80DB2264CDAB002E64A7 /* EblockerApiClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B80D82264CC0A002E64A7 /* EblockerApiClientDelegate.swift */; };
+		A46B80DC2264CDC3002E64A7 /* EblockerDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE561620B6DEC40064A1B6 /* EblockerDevice.swift */; };
+		A46B80DD2264CDC4002E64A7 /* EblockerDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE561620B6DEC40064A1B6 /* EblockerDevice.swift */; };
+		A4C5D3CA224BBEC7002592E7 /* EnterIpAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5D3C9224BBEC7002592E7 /* EnterIpAddressViewController.swift */; };
+		A4C5D3CB224BBEC7002592E7 /* EnterIpAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5D3C9224BBEC7002592E7 /* EnterIpAddressViewController.swift */; };
+		A4C5D3CF224BCDC5002592E7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C5D3D2224BCDC5002592E7 /* Localizable.strings */; };
+		A4C5D3D0224BCDC5002592E7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C5D3D2224BCDC5002592E7 /* Localizable.strings */; };
+		A4C79F4020B94D0600BB45C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C79F3F20B94D0600BB45C4 /* Assets.xcassets */; };
+		A4CF923620B681B2005FDECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF923520B681B2005FDECF /* AppDelegate.swift */; };
+		A4CF923820B681B2005FDECF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF923720B681B2005FDECF /* MasterViewController.swift */; };
+		A4CF923D20B681B2005FDECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CF923B20B681B2005FDECF /* Main.storyboard */; };
+		A4CF924220B681B3005FDECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CF924020B681B3005FDECF /* LaunchScreen.storyboard */; };
+		A4CF924D20B681B3005FDECF /* eBlockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF924C20B681B3005FDECF /* eBlockerTests.swift */; };
+		A4CF925820B681B3005FDECF /* eBlockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF925720B681B3005FDECF /* eBlockerUITests.swift */; };
+		A4F1E01D227060120025488A /* IpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1E01C227060120025488A /* IpUtils.swift */; };
+		A4F1E01E227060120025488A /* IpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1E01C227060120025488A /* IpUtils.swift */; };
+		A4F1E01F227060120025488A /* IpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1E01C227060120025488A /* IpUtils.swift */; };
+		A4F1E02122709D8B0025488A /* IpUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1E02022709D8B0025488A /* IpUtilsTests.swift */; };
+		A4F350E920BA93FB00F76537 /* EblockerScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F350E820BA93FB00F76537 /* EblockerScanner.swift */; };
+		A4F350EB20BA991B00F76537 /* EblockerScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F350EA20BA991B00F76537 /* EblockerScannerDelegate.swift */; };
+		A4FE561720B6DEC40064A1B6 /* EblockerDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE561620B6DEC40064A1B6 /* EblockerDevice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4CF924920B681B3005FDECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CF922A20B681B2005FDECF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CF923120B681B2005FDECF;
+			remoteInfo = eBlocker;
+		};
+		A4CF925420B681B3005FDECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CF922A20B681B2005FDECF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CF923120B681B2005FDECF;
+			remoteInfo = eBlocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A420E7DA20B8720100B939B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A44D5241221ACDD700ED06E0 /* EblockerApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EblockerApiClient.swift; sourceTree = "<group>"; };
+		A46B80D82264CC0A002E64A7 /* EblockerApiClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EblockerApiClientDelegate.swift; sourceTree = "<group>"; };
+		A4C5D3C9224BBEC7002592E7 /* EnterIpAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterIpAddressViewController.swift; sourceTree = "<group>"; };
+		A4C5D3D1224BCDC5002592E7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4C79F3F20B94D0600BB45C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4CAAA7B224A7EE200E7BFEA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		A4CF923220B681B2005FDECF /* eBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CF923520B681B2005FDECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4CF923720B681B2005FDECF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		A4CF923C20B681B2005FDECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4CF924120B681B3005FDECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4CF924320B681B3005FDECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CF924820B681B3005FDECF /* eBlockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBlockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CF924C20B681B3005FDECF /* eBlockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBlockerTests.swift; sourceTree = "<group>"; };
+		A4CF924E20B681B3005FDECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CF925320B681B3005FDECF /* eBlockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBlockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CF925720B681B3005FDECF /* eBlockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBlockerUITests.swift; sourceTree = "<group>"; };
+		A4CF925920B681B3005FDECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F1E01C227060120025488A /* IpUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpUtils.swift; sourceTree = "<group>"; };
+		A4F1E02022709D8B0025488A /* IpUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpUtilsTests.swift; sourceTree = "<group>"; };
+		A4F350E820BA93FB00F76537 /* EblockerScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EblockerScanner.swift; sourceTree = "<group>"; };
+		A4F350EA20BA991B00F76537 /* EblockerScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EblockerScannerDelegate.swift; sourceTree = "<group>"; };
+		A4FE561620B6DEC40064A1B6 /* EblockerDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EblockerDevice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4CF922F20B681B2005FDECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CF924520B681B3005FDECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CF925020B681B3005FDECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A420E7D920B8720000B939B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A420E7DA20B8720100B939B0 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4CF922920B681B2005FDECF = {
+			isa = PBXGroup;
+			children = (
+				A4CF923420B681B2005FDECF /* eBlocker */,
+				A4CF924B20B681B3005FDECF /* eBlockerTests */,
+				A4CF925620B681B3005FDECF /* eBlockerUITests */,
+				A4CF923320B681B2005FDECF /* Products */,
+				A420E7D920B8720000B939B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4CF923320B681B2005FDECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4CF923220B681B2005FDECF /* eBlocker.app */,
+				A4CF924820B681B3005FDECF /* eBlockerTests.xctest */,
+				A4CF925320B681B3005FDECF /* eBlockerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4CF923420B681B2005FDECF /* eBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				A4CF923520B681B2005FDECF /* AppDelegate.swift */,
+				A4CF923720B681B2005FDECF /* MasterViewController.swift */,
+				A4C5D3C9224BBEC7002592E7 /* EnterIpAddressViewController.swift */,
+				A4CF923B20B681B2005FDECF /* Main.storyboard */,
+				A4CF924020B681B3005FDECF /* LaunchScreen.storyboard */,
+				A4C79F3F20B94D0600BB45C4 /* Assets.xcassets */,
+				A4CF924320B681B3005FDECF /* Info.plist */,
+				A4FE561620B6DEC40064A1B6 /* EblockerDevice.swift */,
+				A4F350E820BA93FB00F76537 /* EblockerScanner.swift */,
+				A4F350EA20BA991B00F76537 /* EblockerScannerDelegate.swift */,
+				A44D5241221ACDD700ED06E0 /* EblockerApiClient.swift */,
+				A46B80D82264CC0A002E64A7 /* EblockerApiClientDelegate.swift */,
+				A4C5D3D2224BCDC5002592E7 /* Localizable.strings */,
+				A4F1E01C227060120025488A /* IpUtils.swift */,
+			);
+			path = eBlocker;
+			sourceTree = "<group>";
+		};
+		A4CF924B20B681B3005FDECF /* eBlockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4CF924C20B681B3005FDECF /* eBlockerTests.swift */,
+				A4F1E02022709D8B0025488A /* IpUtilsTests.swift */,
+				A4CF924E20B681B3005FDECF /* Info.plist */,
+			);
+			path = eBlockerTests;
+			sourceTree = "<group>";
+		};
+		A4CF925620B681B3005FDECF /* eBlockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4CF925720B681B3005FDECF /* eBlockerUITests.swift */,
+				A4CF925920B681B3005FDECF /* Info.plist */,
+			);
+			path = eBlockerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4CF923120B681B2005FDECF /* eBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CF925C20B681B3005FDECF /* Build configuration list for PBXNativeTarget "eBlocker" */;
+			buildPhases = (
+				A4CF922E20B681B2005FDECF /* Sources */,
+				A4CF922F20B681B2005FDECF /* Frameworks */,
+				A4CF923020B681B2005FDECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eBlocker;
+			productName = eBlocker;
+			productReference = A4CF923220B681B2005FDECF /* eBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4CF924720B681B3005FDECF /* eBlockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CF925F20B681B3005FDECF /* Build configuration list for PBXNativeTarget "eBlockerTests" */;
+			buildPhases = (
+				A4CF924420B681B3005FDECF /* Sources */,
+				A4CF924520B681B3005FDECF /* Frameworks */,
+				A4CF924620B681B3005FDECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4CF924A20B681B3005FDECF /* PBXTargetDependency */,
+			);
+			name = eBlockerTests;
+			productName = eBlockerTests;
+			productReference = A4CF924820B681B3005FDECF /* eBlockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4CF925220B681B3005FDECF /* eBlockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CF926220B681B3005FDECF /* Build configuration list for PBXNativeTarget "eBlockerUITests" */;
+			buildPhases = (
+				A4CF924F20B681B3005FDECF /* Sources */,
+				A4CF925020B681B3005FDECF /* Frameworks */,
+				A4CF925120B681B3005FDECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4CF925520B681B3005FDECF /* PBXTargetDependency */,
+			);
+			name = eBlockerUITests;
+			productName = eBlockerUITests;
+			productReference = A4CF925320B681B3005FDECF /* eBlockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4CF922A20B681B2005FDECF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "eBlocker Open Source UG";
+				TargetAttributes = {
+					A4CF923120B681B2005FDECF = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1020;
+					};
+					A4CF924720B681B3005FDECF = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = A4CF923120B681B2005FDECF;
+					};
+					A4CF925220B681B3005FDECF = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = A4CF923120B681B2005FDECF;
+					};
+				};
+			};
+			buildConfigurationList = A4CF922D20B681B2005FDECF /* Build configuration list for PBXProject "eBlocker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = A4CF922920B681B2005FDECF;
+			productRefGroup = A4CF923320B681B2005FDECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4CF923120B681B2005FDECF /* eBlocker */,
+				A4CF924720B681B3005FDECF /* eBlockerTests */,
+				A4CF925220B681B3005FDECF /* eBlockerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4CF923020B681B2005FDECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CF924220B681B3005FDECF /* LaunchScreen.storyboard in Resources */,
+				A4C5D3CF224BCDC5002592E7 /* Localizable.strings in Resources */,
+				A4C79F4020B94D0600BB45C4 /* Assets.xcassets in Resources */,
+				A4CF923D20B681B2005FDECF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CF924620B681B3005FDECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CF925120B681B3005FDECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C5D3D0224BCDC5002592E7 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4CF922E20B681B2005FDECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F350EB20BA991B00F76537 /* EblockerScannerDelegate.swift in Sources */,
+				A4FE561720B6DEC40064A1B6 /* EblockerDevice.swift in Sources */,
+				A44D5242221ACDD700ED06E0 /* EblockerApiClient.swift in Sources */,
+				A4C5D3CA224BBEC7002592E7 /* EnterIpAddressViewController.swift in Sources */,
+				A4CF923820B681B2005FDECF /* MasterViewController.swift in Sources */,
+				A46B80D92264CC0A002E64A7 /* EblockerApiClientDelegate.swift in Sources */,
+				A4CF923620B681B2005FDECF /* AppDelegate.swift in Sources */,
+				A4F350E920BA93FB00F76537 /* EblockerScanner.swift in Sources */,
+				A4F1E01D227060120025488A /* IpUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CF924420B681B3005FDECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44D5243221ACDD700ED06E0 /* EblockerApiClient.swift in Sources */,
+				A4CF924D20B681B3005FDECF /* eBlockerTests.swift in Sources */,
+				A4F1E02122709D8B0025488A /* IpUtilsTests.swift in Sources */,
+				A46B80DC2264CDC3002E64A7 /* EblockerDevice.swift in Sources */,
+				A4F1E01E227060120025488A /* IpUtils.swift in Sources */,
+				A46B80DA2264CDAA002E64A7 /* EblockerApiClientDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CF924F20B681B3005FDECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C5D3CB224BBEC7002592E7 /* EnterIpAddressViewController.swift in Sources */,
+				A46B80DB2264CDAB002E64A7 /* EblockerApiClientDelegate.swift in Sources */,
+				A4F1E01F227060120025488A /* IpUtils.swift in Sources */,
+				A44D5244221ACDD700ED06E0 /* EblockerApiClient.swift in Sources */,
+				A4CF925820B681B3005FDECF /* eBlockerUITests.swift in Sources */,
+				A46B80DD2264CDC4002E64A7 /* EblockerDevice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4CF924A20B681B3005FDECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4CF923120B681B2005FDECF /* eBlocker */;
+			targetProxy = A4CF924920B681B3005FDECF /* PBXContainerItemProxy */;
+		};
+		A4CF925520B681B3005FDECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4CF923120B681B2005FDECF /* eBlocker */;
+			targetProxy = A4CF925420B681B3005FDECF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4C5D3D2224BCDC5002592E7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C5D3D1224BCDC5002592E7 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A4CF923B20B681B2005FDECF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4CF923C20B681B2005FDECF /* Base */,
+				A4CAAA7B224A7EE200E7BFEA /* de */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4CF924020B681B3005FDECF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4CF924120B681B3005FDECF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4CF925A20B681B3005FDECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4CF925B20B681B3005FDECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4CF925D20B681B3005FDECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 4F5XLXVWQ3;
+				INFOPLIST_FILE = eBlocker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = org.eblocker.apps.eBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4CF925E20B681B3005FDECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 4F5XLXVWQ3;
+				INFOPLIST_FILE = eBlocker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = org.eblocker.apps.eBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4CF926020B681B3005FDECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73K7QGKV5M;
+				INFOPLIST_FILE = eBlockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eblocker.eBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eBlocker.app/eBlocker";
+			};
+			name = Debug;
+		};
+		A4CF926120B681B3005FDECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73K7QGKV5M;
+				INFOPLIST_FILE = eBlockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eblocker.eBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eBlocker.app/eBlocker";
+			};
+			name = Release;
+		};
+		A4CF926320B681B3005FDECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73K7QGKV5M;
+				INFOPLIST_FILE = eBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eblocker.eBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eBlocker;
+			};
+			name = Debug;
+		};
+		A4CF926420B681B3005FDECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73K7QGKV5M;
+				INFOPLIST_FILE = eBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eblocker.eBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eBlocker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4CF922D20B681B2005FDECF /* Build configuration list for PBXProject "eBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CF925A20B681B3005FDECF /* Debug */,
+				A4CF925B20B681B3005FDECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4CF925C20B681B3005FDECF /* Build configuration list for PBXNativeTarget "eBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CF925D20B681B3005FDECF /* Debug */,
+				A4CF925E20B681B3005FDECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4CF925F20B681B3005FDECF /* Build configuration list for PBXNativeTarget "eBlockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CF926020B681B3005FDECF /* Debug */,
+				A4CF926120B681B3005FDECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4CF926220B681B3005FDECF /* Build configuration list for PBXNativeTarget "eBlockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CF926320B681B3005FDECF /* Debug */,
+				A4CF926420B681B3005FDECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4CF922A20B681B2005FDECF /* Project object */;
+}
