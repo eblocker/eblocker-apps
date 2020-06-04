@@ -56,6 +56,7 @@
 		A420E7DA20B8720100B939B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A44D5241221ACDD700ED06E0 /* EblockerApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EblockerApiClient.swift; sourceTree = "<group>"; };
 		A46B80D82264CC0A002E64A7 /* EblockerApiClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EblockerApiClientDelegate.swift; sourceTree = "<group>"; };
+		A4AB73C424891FB300AF5F89 /* eBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eBlocker.entitlements; sourceTree = "<group>"; };
 		A4C5D3C9224BBEC7002592E7 /* EnterIpAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterIpAddressViewController.swift; sourceTree = "<group>"; };
 		A4C5D3D1224BCDC5002592E7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A4C79F3F20B94D0600BB45C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 		A4CF923420B681B2005FDECF /* eBlocker */ = {
 			isa = PBXGroup;
 			children = (
+				A4AB73C424891FB300AF5F89 /* eBlocker.entitlements */,
 				A4CF923520B681B2005FDECF /* AppDelegate.swift */,
 				A4CF923720B681B2005FDECF /* MasterViewController.swift */,
 				A4C5D3C9224BBEC7002592E7 /* EnterIpAddressViewController.swift */,
@@ -512,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = eBlocker/eBlocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4F5XLXVWQ3;
@@ -524,6 +527,7 @@
 				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.eblocker.apps.eBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = eBlocker/eBlocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4F5XLXVWQ3;
@@ -545,6 +550,7 @@
 				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.eblocker.apps.eBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
