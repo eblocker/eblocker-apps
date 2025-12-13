@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eBlocker</string>
+    <string name="unknown_version">unbekannte Version</string>
+    <string name="not_registered">nicht registriert</string>
+    <string name="connecting">Verbinden</string>
+    <string name="booting">Startet</string>
+    <string name="offline">Nicht verbunden</string>
+    <string name="error">Fehler</string>
+    <string name="installing_update">Wird aktualisiert</string>
+    <string name="shutting_down">Fährt herunter</string>
+    <string name="rebooting">Startet neu</string>
+</resources>

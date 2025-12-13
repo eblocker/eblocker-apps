@@ -1,7 +1,11 @@
 package org.eblocker.app
 
+import android.app.Application
+import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -33,25 +37,35 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.compose.viewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import org.eblocker.app.ui.theme.EBlockerTheme
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.w(TAG, "MainActivity::onCreate")
         setContent {
             EBlockerTheme {
                 EblockerAppWithTopBar()
@@ -63,10 +77,14 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun EblockerAppWithTopBar() {
+    val viewModel: EblockerDevicesViewModel = viewModel(
+        factory = EblockerDevicesViewModelFactory(LocalContext.current.applicationContext)
+    )
     val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior(rememberTopAppBarState())
     var currentUrl by remember { mutableStateOf<String?>(null) }
     if (currentUrl == null) {
         MainScreen(
+            viewModel = viewModel,
             scrollBehavior = scrollBehavior,
             onOpenUrl = { url ->
                 currentUrl = url
@@ -85,7 +103,11 @@ fun EblockerAppWithTopBar() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainScreen(scrollBehavior: TopAppBarScrollBehavior, onOpenUrl: (String) -> Unit) {
+fun MainScreen(
+    viewModel: EblockerDevicesViewModel,
+    scrollBehavior: TopAppBarScrollBehavior,
+    onOpenUrl: (String) -> Unit
+) {
     Scaffold(
         modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
 
@@ -111,23 +133,28 @@ fun MainScreen(scrollBehavior: TopAppBarScrollBehavior, onOpenUrl: (String) -> U
             )
         },
     ) { innerPadding ->
-        ScrollContent(innerPadding, onOpenUrl)
+        ScrollContent(
+            viewModel = viewModel,
+            innerPadding = innerPadding,
+            onOpenUrl = onOpenUrl
+        )
     }
 
 }
 
 @Composable
-fun ScrollContent(innerPadding: PaddingValues, onOpenUrl: (String) -> Unit) {
+fun ScrollContent(
+    viewModel: EblockerDevicesViewModel,
+    innerPadding: PaddingValues,
+    onOpenUrl: (String) -> Unit
+) {
+    val currentEblockers by viewModel.currentEblockers.observeAsState(listOf())
     Surface {
-        EblockerDevicesList(innerPadding, SampleData.eblockerDevices, onOpenUrl)
+        Log.w(TAG, "ScrollContent")
+        EblockerDevicesList(innerPadding, currentEblockers, onOpenUrl)
     }
 }
 
-data class EblockerDevice(
-    val name: String,
-    val ipAddress: String,
-    val osVersion: String,
-    val productName: String)
 @Composable
 fun EblockerDeviceCard(
     eblockerDevice: EblockerDevice,
@@ -149,9 +176,9 @@ fun EblockerDeviceCard(
                 style = MaterialTheme.typography.titleLarge
             )
             Spacer(modifier = Modifier.height(4.dp))
-            Text(eblockerDevice.productName)
+            Text(getStatusAndProduct(eblockerDevice))
             Spacer(modifier = Modifier.height(4.dp))
-            Text(eblockerDevice.osVersion)
+            Text(getOsVersion(eblockerDevice))
             Spacer(modifier = Modifier.height(4.dp))
             Text(eblockerDevice.ipAddress)
             Row {
@@ -192,6 +219,39 @@ fun EblockerDeviceCard(
     }
 }
 
+@Composable
+fun getOsVersion(device: EblockerDevice): String {
+    if (device.osVersion == null) {
+        return String.format("eOS (%s)", stringResource(R.string.unknown_version))
+    } else {
+        return String.format("eOS %s", device.osVersion)
+    }
+}
+
+@Composable
+fun getStatusAndProduct(device: EblockerDevice): String {
+    return when (device.state) {
+        EblockerDeviceState.RUNNING ->
+            if (device.productName == null) {
+                String.format("(%s)", stringResource(R.string.not_registered))
+            } else {
+                normalizeProductName(device.productName!!)
+            }
+        EblockerDeviceState.UNKNOWN  -> stringResource(R.string.connecting)
+        EblockerDeviceState.BOOTING  -> stringResource(R.string.booting)
+        EblockerDeviceState.ERROR    -> stringResource(R.string.error)
+        EblockerDeviceState.OFFLINE  -> stringResource(R.string.offline)
+        EblockerDeviceState.UPDATING -> stringResource(R.string.installing_update)
+        EblockerDeviceState.SHUTTING_DOWN -> stringResource(R.string.shutting_down)
+        EblockerDeviceState.SHUTTING_DOWN_FOR_REBOOT -> stringResource(R.string.rebooting)
+    }
+}
+
+fun normalizeProductName(productName: String): String {
+    val regex = " ?\\(.*?\\)".toRegex()
+    return productName.replace(regex, "")
+}
+
 @Preview(name = "Light Mode")
 @Preview(
     uiMode = Configuration.UI_MODE_NIGHT_YES,
@@ -204,6 +264,7 @@ fun PreviewEblockerDeviceCard() {
         Surface {
             EblockerDeviceCard(EblockerDevice(
                 "My eBlocker",
+                url = "http://192.168.0.2:3000/",
                 "192.168.0.2",
                 "eOS 3.2.3",
                 "eBlocker Family Lifetime"),
@@ -219,9 +280,10 @@ fun EblockerDevicesList(
     eblockerDevices: List<EblockerDevice>,
     onOpenUrl: (String) -> Unit
 ) {
+    Log.w(TAG, "EblockerDevicesList")
     LazyColumn(contentPadding = innerPadding) {
-        items(eblockerDevices) { message ->
-            EblockerDeviceCard(message, onOpenUrl)
+        items(eblockerDevices) { device ->
+            EblockerDeviceCard(device, onOpenUrl)
         }
     }
 }
@@ -283,5 +345,12 @@ fun WebPageScreen(
                 webView.loadUrl(url)
             }
         )
+    }
+}
+
+class EblockerDevicesViewModelFactory(val context: Context) :
+    ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return EblockerDevicesViewModel(context) as T
     }
 }

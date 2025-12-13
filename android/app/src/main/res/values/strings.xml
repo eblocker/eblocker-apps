@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">eBlocker</string>
+    <string name="unknown_version">unknown version</string>
+    <string name="not_registered">not registered</string>
+    <string name="connecting">Connecting</string>
+    <string name="booting">Booting</string>
+    <string name="offline">Offline</string>
+    <string name="error">Error</string>
+    <string name="installing_update">Installing update</string>
+    <string name="shutting_down">Shutting down</string>
+    <string name="rebooting">Rebooting</string>
 </resources>
